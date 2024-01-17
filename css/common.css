@@ -1,0 +1,224 @@
+/* 各个页面相同的样式表 : 头, 尾部 */
+/* 版心 */
+.wrapper {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+/* 快捷导航 */
+.top_dh_1 {
+    height: 52px;
+    background-color: transparent;
+}
+
+.top_dh_1 .wrapper {
+    height: 52px;
+}
+
+/* 目的: 招募标语文字内容居左侧对齐 */
+.top_dh_1 .wrapper ol {
+    float: left;
+}
+
+/* 目的: 让所有的文字在一行显示 */
+.top_dh_1 .wrapper ol li {
+    float: left;
+    line-height: 52px;
+}
+
+.top_dh_1 .wrapper ol li a {
+    padding: 0 16px;
+    border-right: 1px solid #666;
+    font-size: 30px;
+	font-family: 'Times New Roman', Times, serif;
+    color:#dcdcdc;
+	text-shadow: 2px 2px 2px 2px;
+}
+
+/* 目的: 所有的文字内容居右侧对齐 */
+.top_dh_1 .wrapper ul {
+    float: right;
+}
+
+/* 目的: 让所有的文字在一行显示 */
+.top_dh_1 .wrapper ul li {
+    float: left;
+    line-height: 52px;
+}
+
+.top_dh_1 .wrapper ul li a {
+    padding: 0 16px;
+    border-right: 1px solid #666;
+	font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    color: #dcdcdc;
+}
+
+.top_dh_1 .wrapper ul li a span {
+    display: inline-block;
+    margin-right: 8px;
+    width: 11px;
+    height: 16px;
+    background-image: url(../images/sprites.png);
+    background-position: -160px -70px;
+
+    vertical-align: middle;
+}
+
+.top_dh_1 li a:hover {
+    border-bottom: 1px solid lawngreen;
+}
+
+/* 清除a的边框线: 最后一个li里面的a */
+.top_dh_1 .wrapper ul li:last-child a {
+    border: 0;
+}
+
+/* 头部 */
+.header {
+    margin: 30px auto;
+    height: 70px;
+}
+
+.logo {
+    float: left;
+    width: 207px;
+    height: 70px;
+}
+
+/* logo 搜索引擎优化做法 */
+.logo h1 {
+    width: 207px;
+    height: 70px;
+}
+
+/* 第二排导航栏 */
+.top_dh_2 {
+    float: left;
+    margin-left: 10px;
+    height: 70px;
+}
+
+.top_dh_2 li {
+    float: left;
+    margin-right: 48px;
+    line-height: 70px;
+}
+
+.top_dh_2 li a {
+    padding-bottom: 7px;
+}
+
+
+.top_dh_2 li a:hover {
+    color: #27ba9b;
+    border-bottom: 1px solid #27ba9b;
+}
+
+.search {
+    position: relative;
+    float: left;
+    margin-top: 24px;
+    margin-left: 34px;
+    width: 172px;
+    height: 30px;
+    border-bottom: 2px solid #e7e7e7;
+}
+
+.search input {
+    padding-left: 30px;
+    width: 172px;
+    height: 28px;
+}
+
+.search input::placeholder {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.search span {
+    position: absolute;
+    left: 2px;
+    top: 0;
+    /* display: inline-block; */
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/sprites.png);
+    background-position: -80px -69px;
+}
+
+
+/* 网站版权信息footer */
+.footer {
+    height: 342px;
+    background-color: #333;
+}
+
+.footer .wrapper {
+    width: 1393px;
+}
+
+.footer .top {
+    padding-top: 59px;
+    padding-left: 135px;
+    height: 175px;
+    border-bottom: 3px solid ;
+}
+
+.footer .top li {
+    position: relative;
+    float: left;
+    margin-right: 300px;
+    width: 195px;
+    height: 58px;
+
+    line-height: 58px;
+}
+
+.footer .top li:last-child {
+    margin-right: 0;
+}
+
+/* 伪元素添加的标签  行内 */
+/* 如果行内块和行内文字无法通过vertical-align或行高对齐, 定位 */
+.footer .top li::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* display: inline-block; */
+    content: '';
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/sprites.png);
+    vertical-align: middle;
+}
+
+.footer .top li span {
+    margin-left: 77px;
+    font-size: 28px;
+    color: #fff;
+}
+
+/* 第二个li里面的berfore添加背景图位置属性 */
+.footer .top li:nth-child(2)::before {
+    background-position: -130px 0;
+}
+.footer .top li:nth-child(3)::before {
+    background-position: -64px 0;
+}
+
+.footer .bottom {
+    padding-top: 40px;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+}
+
+.footer .bottom a {
+    font-size: 14px;
+    color: #999;
+}
+
+.footer .bottom p {
+    margin-bottom: 20px;
+}
