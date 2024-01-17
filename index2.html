@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- meta:desc -->
+		<meta name="description" content="OpenMcode，致力于打造全球最大的白黑客程序员技术交流平台">
+		<!-- meta:kw -->
+		<meta name="keywords" content="open,my，code,程序员,技术,IT,电脑,网络,编程,开发,论坛,讨论,学习">
+		<title>OpenMcode welcome！</title>
+		<!-- link:favicon -->
+		<link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+		<style>
+			/* 居中布局 */
+			html,
+			body {
+				height: 100%;
+				margin: 0;
+				padding: 0;
+				background-image: url(images/background.jpg) ;
+				background-size: cover;
+				background-position: center;
+
+			}
+
+			body {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				
+			}
+
+			/* Logo样式 */
+			.logo {
+				width: 150px;
+				height: 150px;
+				background-color: #ccc;
+				/* 这里替换成你的Logo图片地址 */
+				background-image: url(images/t.jpg);
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+
+
+			}
+			
+			audio{
+				opacity:0.7;
+			}
+
+			/* 名称样式 */
+			h1 {
+				font-size: 2em;
+				margin: 0;
+				padding: 0;
+				color: #ccc;
+			}
+
+			/* 按钮容器样式 */
+			.button-container {
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-end;
+			}
+
+			/* 按钮样式 */
+			button {
+				padding: 10px 20px;
+				font-size: 1.2em;
+				margin: 10px;
+				border: none;
+				border-radius: 5px;
+				background-color: #4CAF50;
+				color: white;
+				cursor: pointer;
+			}
+
+			/* 按钮A样式 */
+			#button-a {
+				background-color: #4CAF50;
+			}
+
+			/* 按钮B样式 */
+			#button-b {
+				background-color: #f44336;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="logo"></div>
+		<h1>OpenMcode welcome！</h1>
+		<audio src="images/bgm1.mp3" controls autoplay loop></audio>
+		<div class="button-container">
+			<a href="#"><button id="button-a">Learner</button></a>
+			<a href="#"><button id="button-b">Coder</button></a>
+		</div>
+	</body>
+</html>
